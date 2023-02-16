@@ -3,6 +3,7 @@ import './App.css';
 import Login from '../login/Login';
 import Register from './Register';
 
+
 function App() {
   return (
     <React.Fragment>
@@ -10,7 +11,7 @@ function App() {
       <p>Para One</p>
       <p>Para two</p>
       <Login />
-      < Register />
+      <Register />
     </React.Fragment>
   );
 }

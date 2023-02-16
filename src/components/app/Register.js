@@ -1,19 +1,25 @@
 import React from 'react';
-import { component } from "react";
+import {Component} from "react";
 
-class Login extends Component {
+class Register extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {"username": "", "isLoggedin": true, "isLoggedOut": false};
     }
     render() {
         return (
             <React.Fragment>
-                <p>Login Component!</p>
+                <p>Register Component!</p>
+                <p> Your name is {this.state.username}</p>
+                <button onClick={this.viewName}> View Name</button>
             </React.Fragment>
         );
     }
-
+    viewName = () =>{
+        let uname = "David Emerald";
+        this.setState({ "username": uname });
+    }
 }
 
-export default Login;
+export default Register;
